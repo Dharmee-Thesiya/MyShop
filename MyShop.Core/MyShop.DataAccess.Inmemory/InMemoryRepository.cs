@@ -22,7 +22,7 @@ namespace MyShop.DataAccess.Inmemory
                 items = new List<T>();
             }
         }
-        public void main()
+        public void Commit()
         {
             cache[className] = items;
         }

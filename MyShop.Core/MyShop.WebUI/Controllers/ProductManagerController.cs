@@ -43,6 +43,7 @@ namespace MyShop.WebUI.Controllers
             else
             {
                 context.Insert(product);
+                context.Commit();
                 
 
                 return RedirectToAction("Index");
@@ -84,6 +85,7 @@ namespace MyShop.WebUI.Controllers
             productToEdit.Image = product.Image;
             productToEdit.Name = product.Name;
             productToEdit.Price = product.Price;
+            context.Commit();
 
             
             return RedirectToAction("Index");
@@ -113,6 +115,7 @@ namespace MyShop.WebUI.Controllers
             else
             {
                 context.Delete(Id);
+                context.Commit();
                 
                 return RedirectToAction("Index");
             }

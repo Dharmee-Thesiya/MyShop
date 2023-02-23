@@ -91,6 +91,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -277,6 +278,14 @@
     <ProjectReference Include="..\MyShop.DataAccess.Inmemory\MyShop.DataAccess.Inmemory.csproj">
       <Project>{2BC3BD85-B173-48E6-8CD0-B570A9EF9BA8}</Project>
       <Name>MyShop.DataAccess.Inmemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyShop.DataAccess.SQL\MyShop.DataAccess.SQL.csproj">
+      <Project>{16fea2e3-c071-48a0-8843-6333e0c992c2}</Project>
+      <Name>MyShop.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyShop.Service\MyShop.Service.csproj">
+      <Project>{ffd033fb-0a38-486f-b781-e65d3c52b4dc}</Project>
+      <Name>MyShop.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

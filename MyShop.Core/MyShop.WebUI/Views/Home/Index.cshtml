@@ -5,7 +5,7 @@
 }
 <h1>Products</h1>
 <div class="col-md-2">
-    <h4> Filter By Categoris </h4>
+    <h4> Filter By Categories </h4>
     <div class="list-group">
         @Html.ActionLink("All","Index",null,new { @class = Request["Category"]==null? "list-group-item active" : "list-group-item" })
         @foreach(var cat in Model.productCategories)
@@ -33,7 +33,7 @@
                 <h4>@item.Price</h4>
             </div>
             <div class="col-md-12">
-                <a href="#" class="btn btn-default"> Add To Basket </a>
+                <a href="@Url.Action("AddToBasket","Basket",new { Id=item.Id})" class="btn btn-default"> Add To Basket </a>
             </div>
         </div>
     }

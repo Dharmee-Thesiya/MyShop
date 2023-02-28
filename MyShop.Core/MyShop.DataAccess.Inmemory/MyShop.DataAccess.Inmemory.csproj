@@ -52,6 +52,14 @@
       <Project>{50AC5EED-E341-4397-9532-70C0C7D927C8}</Project>
       <Name>MyShop.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MyShop.DataAccess.SQL\MyShop.DataAccess.SQL.csproj">
+      <Project>{16fea2e3-c071-48a0-8843-6333e0c992c2}</Project>
+      <Name>MyShop.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyShop.Service\MyShop.Service.csproj">
+      <Project>{ffd033fb-0a38-486f-b781-e65d3c52b4dc}</Project>
+      <Name>MyShop.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig">
